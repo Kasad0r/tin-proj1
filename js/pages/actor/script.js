@@ -8,6 +8,11 @@ function confirmDelete() {
     }
 }
 
-function successfulAdded(){
+function successfullyAdded(){
     alert("Actor successfully added")
+}
+
+
+function successfullyModified(){
+    alert("Actor successfully modified")
 }

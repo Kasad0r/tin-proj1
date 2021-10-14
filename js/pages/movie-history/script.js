@@ -9,6 +9,10 @@ function confirmDelete() {
 }
 
 
-function successfulAdded(){
+function successfullyAdded(){
     alert("Movie actors description successfully added")
+}
+
+function successfullyModified(){
+    alert("Movie actors description successfully modified")
 }

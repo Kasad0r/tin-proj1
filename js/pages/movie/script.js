@@ -12,3 +12,7 @@ function confirmDelete() {
 function successfulAdded(){
     alert("Movie successfully added")
 }
+
+function successfullyModified(){
+    alert("Movie successfully modified")
+}
