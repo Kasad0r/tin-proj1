@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cinema</title>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <title>Movie Actors Description</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="navbar">
-    <div>
-        <img class="logo" src="img/favicon.png" alt="logo">
-        <h1>Cinema</h1>
-    </div>
-    <div>
-        <a href="index.html">Main page</a>
-        <a href="pages/movie-info/list.html">Halls</a>
-        <a href="pages/movie/list.html">Movies</a>
-        <a href="pages/actor/list.html">Actors</a>
-    </div>
-
-</div>
-<div class="main">
+<div id="wrapper">
+    <header>
+        <div class="main-logo">
+            <img class="logo" src="img/favicon.png" alt="logo">
+            <span>Cinema</span>
+        </div>
+    </header>
+    <nav>
+        <ul class="top-menu">
+            <li><a class="selected-page" href="#">Main page</a></li>
+            <li><a  href="pages/movie-history/list.html">Movie Info</a></li>
+            <li><a href="pages/movie/list.html">Movies</a></li>
+            <li><a href="pages/actor/list.html">Actors</a></li>
+        </ul>
+    </nav>
+    <h1 class="list-name">Main Page</h1>
     <p>1914 translation by H. Rackham
         "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
         will give you a complete account of the system, and expound the actual teachings of the great explorer of the
@@ -31,9 +34,10 @@
         some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
         no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
 </div>
-<div class="footer">
+<br>
+<footer class="footer">
     <span>Dmytro Proniakin s20737</span>
-</div>
+</footer>
 
 
 </body>

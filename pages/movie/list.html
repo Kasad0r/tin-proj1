@@ -2,86 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cinema Actors List</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png"/>
+    <title>Movie Actors Description</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-<div class="navbar">
-    <div>
-        <img class="logo" src="../../img/favicon.png" alt="logo">
-        <h1>Cinema</h1>
-    </div>
-    <div>
-        <a href="../../index.html">Main page</a>
-        <a href="../movie-info/list.html">Movie Info</a>
-        <a href="../../pages/movie/list.html">Movies</a>
-        <a href="../../pages/actor/list.html">Actors</a>
-    </div>
+<div id="wrapper">
+    <header>
+        <div class="main-logo">
+            <img class="logo" src="../../img/favicon.png" alt="logo">
+            <span>Cinema</span>
+        </div>
+    </header>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a href="../../pages/movie-history/list.html">Movie Info</a></li>
+            <li><a class="selected-page" href="../../pages/movie/list.html">Movies</a></li>
+            <li><a href="../../pages/actor/list.html">Actors</a></li>
+        </ul>
+    </nav>
 
-</div>
-<div class="main">
-    <h1>Actors List</h1>
+
+    <h1 class="list-name">Movies List</h1>
+
     <table>
         <thead>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>B-day</th>
-        <th>Action</th>
+        <tr>
+            <th>Name</th>
+            <th>Release Data</th>
+            <th>iMDB rate</th>
+            <th>Budget</th>
+            <th>Description</th>
+            <th>Genre</th>
+            <th>Action</th>
+        </tr>
         </thead>
         <tbody>
         <tr>
-            <td>Christian</td>
-            <td>Bale</td>
-            <td>30.02.1974</td>
+            <td class="tbl-movie-name">     Free Guy</td>
+            <td class="tbl-movie-release">  2021</td>
+            <td class="tbl-hist-movie-name">7.3</td>
+            <td>$120,000,000</td>
+            <td>A bank teller discovers that he's actually an NPC inside a brutal, open world video game.</td>
+            <td class="tbl-movie-genre">Action, Adventure, Comedy</td>
             <td>
-                <ul>
+                <ul class="actions-list">
                     <li>
                         <a href="#">Info</a>
                     </li>
                     <li>
-                        <a href="#">Edit</a>
+                        <a href="../../pages/movie/edit.html">Edit</a>
                     </li>
                     <li>
-                        <a href="#">Remove</a>
-                    </li>
-
-                </ul>
-            </td>
-        </tr>
-
-        <tr>
-            <td>Christian</td>
-            <td>Bale</td>
-            <td>30.02.1974</td>
-            <td>
-                <ul>
-                    <li>
-                        <a href="#">Info</a>
-                    </li>
-                    <li>
-                        <a href="#">Edit</a>
-                    </li>
-                    <li>
-                        <a href="#">Remove</a>
+                        <a href="#" onclick="confirmDelete()">Remove</a>
                     </li>
 
                 </ul>
             </td>
         </tr>
         <tr>
-            <td>Christian</td>
-            <td>Bale</td>
-            <td>30.02.1974</td>
+            <td class="tbl-movie-name">     Squid Game</td>
+            <td class="tbl-movie-release">  2021</td>
+            <td class="tbl-hist-movie-name">8.3</td>
+            <td>$30,000,000</td>
+            <td>Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside,
+                a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won
+                prize at stake.
+            </td>
+            <td class="tbl-movie-genre">Action, Adventure, Drama</td>
             <td>
-                <ul>
+                <ul class="actions-list">
                     <li>
                         <a href="#">Info</a>
                     </li>
                     <li>
-                        <a href="#">Edit</a>
+                        <a href="../../pages/movie/edit.html">Edit</a>
                     </li>
                     <li>
-                        <a href="#">Remove</a>
+                        <a href="#" onclick="confirmDelete()">Remove</a>
                     </li>
 
                 </ul>
@@ -90,13 +89,14 @@
         </tbody>
     </table>
 
-    <a href="../actor/form.html"><h2>Add New Actor</h2></a>
+    <a class="add-new" href="../movie/form.html">Add New Movie</a>
 </div>
 <br>
-<div class="footer">
+<footer class="footer">
     <span>Dmytro Proniakin s20737</span>
-</div>
+</footer>
 
 
+<script src="../../js/pages/movie/script.js"></script>
 </body>
 </html>

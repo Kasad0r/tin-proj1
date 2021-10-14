@@ -2,26 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cinema Actors List</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png"/>
+    <title>Movie Actors Description</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-<div class="navbar">
-    <div>
-        <img class="logo" src="../../img/favicon.png" alt="logo">
-        <h1>Cinema</h1>
-    </div>
-    <div>
-        <a href="../../index.html">Main page</a>
-        <a href="../movie-info/list.html">Movie Info</a>
-        <a href="../../pages/movie/list.html">Movies</a>
-        <a href="../../pages/actor/list.html">Actors</a>
-    </div>
+<div id="wrapper">
+    <header>
+        <div class="main-logo">
+            <img class="logo" src="../../img/favicon.png" alt="logo">
+            <span>Cinema</span>
+        </div>
+    </header>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a href="../../pages/movie-history/list.html">Movie Info</a></li>
+            <li><a  href="../../pages/movie/list.html">Movies</a></li>
+            <li><a class="selected-page" href="../../pages/actor/list.html">Actors</a></li>
+        </ul>
+    </nav>
 
-</div>
-<div class="main">
-    <h1>Create new actor</h1>
-    <form>
+
+    <h1 class="list-name">Edit Actor</h1>
+    <form class="form-input" onsubmit="successfulAdded()">
         <div>
             <label for="actor_name">Name</label>
             <input id="actor_name" type="text" required>
@@ -39,16 +43,16 @@
 
         </div>
         <div>
-            <input type="submit">
-            <a href="list.html">Back</a>
+            <input type="submit" >
+            <a class="back-btn" href="list.html">Back</a>
         </div>
     </form>
 </div>
 <br>
-<div class="footer">
+<footer class="footer">
     <span>Dmytro Proniakin s20737</span>
-</div>
+</footer>
 
-
+<script src="../../js/pages/actor/script.js"></script>
 </body>
 </html>

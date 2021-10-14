@@ -2,47 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cinema Actors List</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png"/>
+    <title>Movie Actors Description</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-<div class="navbar">
-    <div>
-        <img class="logo" src="../../img/favicon.png" alt="logo">
-        <h1>Cinema</h1>
-    </div>
-    <div>
-        <a href="../../index.html">Main page</a>
-        <a href="../movie-info/list.html">Movie Info</a>
-        <a href="../../pages/movie/list.html">Movies</a>
-        <a href="../../pages/actor/list.html">Actors</a>
-    </div>
+<div id="wrapper">
+    <header>
+        <div class="main-logo">
+            <img class="logo" src="../../img/favicon.png" alt="logo">
+            <span>Cinema</span>
+        </div>
+    </header>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a href="../../pages/movie-history/list.html">Movie Info</a></li>
+            <li><a href="../../pages/movie/list.html">Movies</a></li>
+            <li><a class="selected-page" href="../../pages/actor/list.html">Actors</a></li>
+        </ul>
+    </nav>
 
-</div>
-<div class="main">
-    <h1>Actors List</h1>
-    <table>
+
+    <h1 class="list-name">Actors List</h1>
+    <table class="">
         <thead>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>B-day</th>
-        <th>Action</th>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>B-day</th>
+            <th>Action</th>
+        </tr>
         </thead>
         <tbody>
         <tr>
-            <td>Christian</td>
-            <td>Bale</td>
-            <td>30.02.1974</td>
+            <td class="tbl-actor-info">Christian</td>
+            <td class="tbl-actor-info">Bale</td>
+            <td class="tbl-actor-info">30.02.1974</td>
             <td>
-                <ul>
+                <ul class="actions-list actor">
                     <li>
                         <a href="#">Info</a>
                     </li>
                     <li>
-                        <a href="#">Edit</a>
+                        <a href="../../pages/actor/edit.html">Edit</a>
                     </li>
                     <li>
-                        <a href="#">Remove</a>
+                        <a href="#" onclick="confirmDelete()">Remove</a>
                     </li>
 
                 </ul>
@@ -50,38 +56,38 @@
         </tr>
 
         <tr>
-            <td>Christian</td>
-            <td>Bale</td>
-            <td>30.02.1974</td>
+            <td class="tbl-actor-info">Christian</td>
+            <td class="tbl-actor-info">Bale</td>
+            <td class="tbl-actor-info">30.02.1974</td>
             <td>
-                <ul>
+                <ul class="actions-list actor">
                     <li>
                         <a href="#">Info</a>
                     </li>
                     <li>
-                        <a href="#">Edit</a>
+                        <a href="../../pages/actor/edit.html">Edit</a>
                     </li>
                     <li>
-                        <a href="#">Remove</a>
+                        <a href="#" onclick="confirmDelete()">Remove</a>
                     </li>
 
                 </ul>
             </td>
         </tr>
         <tr>
-            <td>Christian</td>
-            <td>Bale</td>
-            <td>30.02.1974</td>
+            <td class="tbl-actor-info">Christian</td>
+            <td class="tbl-actor-info">Bale</td>
+            <td class="tbl-actor-info">30.02.1974</td>
             <td>
-                <ul>
+                <ul class="actions-list actor">
                     <li>
                         <a href="#">Info</a>
                     </li>
                     <li>
-                        <a href="#">Edit</a>
+                        <a href="../../pages/actor/edit.html">Edit</a>
                     </li>
                     <li>
-                        <a href="#">Remove</a>
+                        <a href="#" onclick="confirmDelete()">Remove</a>
                     </li>
 
                 </ul>
@@ -90,13 +96,13 @@
         </tbody>
     </table>
 
-    <a href="../actor/form.html"><h2>Add New Actor</h2></a>
+    <a class="add-new" href="../actor/form.html">Add New Actor</a>
 </div>
 <br>
-<div class="footer">
+<footer class="footer">
     <span>Dmytro Proniakin s20737</span>
-</div>
+</footer>
 
-
+<script src="../../js/pages/actor/script.js"></script>
 </body>
 </html>

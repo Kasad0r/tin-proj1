@@ -2,53 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cinema Actors List</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png"/>
+    <title>Movie Actors Description</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-<div class="navbar">
-    <div>
-        <img class="logo" src="../../img/favicon.png" alt="logo">
-        <h1>Cinema</h1>
-    </div>
-    <div>
-        <a href="../../index.html">Main page</a>
-        <a href="../movie-info/list.html">Movie Info</a>
-        <a href="../../pages/movie/list.html">Movies</a>
-        <a href="../../pages/actor/list.html">Actors</a>
-    </div>
+<div id="wrapper">
+    <header>
+        <div class="main-logo">
+            <img class="logo" src="../../img/favicon.png" alt="logo">
+            <span>Cinema</span>
+        </div>
+    </header>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a href="../../pages/movie-history/list.html">Movie Info</a></li>
+            <li><a class="selected-page" href="../../pages/movie/list.html">Movies</a></li>
+            <li><a href="../../pages/actor/list.html">Actors</a></li>
+        </ul>
+    </nav>
 
-</div>
-<div class="main">
-    <h1>Create new actor</h1>
-    <form>
+
+    <h1 class="list-name">Add new movie</h1>
+    <form class="form-input" onsubmit="successfulAdded()">
         <div>
-            <label for="actor_name">Name</label>
-            <input id="actor_name" type="text" required>
+            <label for="movie_name">Name: </label>
+            <input id="movie_name" type="text" required>
             <span class="errorName">(Field required)</span>
         </div>
         <div>
-            <label for="actor_suname">Surname</label>
-            <input id="actor_suname" type="text" required>
-            <span class="errorSurname">(Field required)</span>
+            <label for="release_date">Release Date: </label>
+            <input id="release_date" type="date" required>
+            <span class="wrongDate">(Field required)</span>
 
         </div>
         <div>
-            <label for="actor_bday">B-day</label>
-            <input id="actor_bday" type="date">
-
+            <label for="imdb_rate">iMDB Rate: </label>
+            <input id="imdb_rate" type="number">
+        </div>
+        <div>
+            <label for="budget">Budget: </label>
+            <input id="budget" type="text">
+        </div>
+        <div>
+            <label for="movie_description">Movie Description: </label>
+            <input id="movie_description" type="text">
+        </div>
+        <div>
+            <label for="genre">Genre: </label>
+            <input id="genre" type="text">
         </div>
         <div>
             <input type="submit">
-            <a href="list.html">Back</a>
+            <a class="back-btn" href="list.html">Back</a>
         </div>
     </form>
 </div>
 <br>
-<div class="footer">
+<footer class="footer">
     <span>Dmytro Proniakin s20737</span>
-</div>
+</footer>
 
+<script src="../../js/pages/movie/script.js"></script>
 
 </body>
 </html>
