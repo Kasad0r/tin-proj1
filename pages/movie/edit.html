@@ -17,7 +17,7 @@
     <nav>
         <ul class="top-menu">
             <li><a href="../../index.html">Main page</a></li>
-            <li><a href="../../pages/movie-history/list.html">Movie Info</a></li>
+            <li><a href="../movie-actors-description/list.html">Movie Info</a></li>
             <li><a class="selected-page" href="../../pages/movie/list.html">Movies</a></li>
             <li><a href="../../pages/actor/list.html">Actors</a></li>
         </ul>
@@ -50,9 +50,33 @@
             <input id="movie_description" type="text"
                    value="Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside,       a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won                prize at stake.">
         </div>
-        <div>
-            <label for="genre">Genre: </label>
-            <input id="genre" type="text" value="Action. Adventure, Drama">
+        <div class="genre-input">
+            <label>Genre: </label>
+            <div class="multiselect">
+                <div class="selectBox" onclick="showCheckboxes()">
+                    <label>
+                        <select>
+                            <option>Select an option</option>
+                        </select>
+                    </label>
+                    <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes">
+                    <label for="genre_horror">
+                        <input type="checkbox" id="genre_horror" checked/>Horror</label>
+                    <label for="genre_scifi">
+                        <input type="checkbox" id="genre_scifi"/>Sci-Fi</label>
+                    <label for="genre_sports">
+                        <input type="checkbox" id="genre_sports" />Sports</label>
+                    <label for="genre_comedy">
+                        <input type="checkbox" id="genre_comedy"checked/>Comedy</label>
+                    <label for="genre_crime">
+                        <input type="checkbox" id="genre_crime"/>Crime</label>
+                    <label for="genre_Romance">
+                        <input type="checkbox" id="genre_Romance"/>Romance</label>
+
+                </div>
+            </div>
         </div>
         <div>
             <input type="submit">
