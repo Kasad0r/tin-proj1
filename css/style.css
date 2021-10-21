@@ -32,7 +32,7 @@ input[type="text"] {
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
     height: 30px;
-    color: #b2b2b2;
+    color: #7e7e7e;
     padding: 0 10px;
     vertical-align: top;
 }
@@ -41,7 +41,7 @@ input[type="number"] {
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
     height: 30px;
-    color: #b2b2b2;
+    color: #7e7e7e;
     padding: 0 10px;
     vertical-align: top;
 }
@@ -50,9 +50,28 @@ input[type="date"] {
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
     height: 30px;
-    color: #b2b2b2;
+    color: #7e7e7e;
     padding: 0 10px;
     vertical-align: top;
+}
+
+input#actor_fee.error_req_input_field {
+    border: 2px solid red;
+}
+
+input#actor_role_name.error_req_input_field {
+    border: 2px solid red;
+
+}
+
+input#actor_name.error_req_input_field {
+    border: 2px solid red;
+
+}
+
+input#actor_suname.error_req_input_field {
+    border: 2px solid red;
+
 }
 
 select {
@@ -88,6 +107,8 @@ input[type="submit"] {
     max-width: 960px;
     align-content: center;
     margin: auto;
+
+
 }
 
 table thead tr th {
@@ -95,7 +116,9 @@ table thead tr th {
 }
 
 table {
-    border-spacing: 0.5rem;
+    border-collapse: separate;
+    border-spacing: 50px 0;
+    /* border-spacing: 0.5rem;*/
     border-radius: 3px;
     flex-basis: 10%;
 }
@@ -124,6 +147,7 @@ table {
 #checkboxes {
     display: none;
     border: 1px #dadada solid;
+
 }
 
 #checkboxes label {
@@ -168,6 +192,17 @@ nav .top-menu li a {
     align-content: center;
 }
 
+.info {
+    margin-top: 50px;
+    border-top: 5px solid #7e7e7e;
+    border-collapse: separate;
+    border-spacing: 2em;
+}
+
+.info tbody tr {
+
+}
+
 .tbl-hist-movie-release {
     color: #8f8f8f;
 }
@@ -196,9 +231,11 @@ nav .top-menu li a:hover {
 nav ul {
     margin: 0;
     padding: 0;
+
 }
 
 nav li a {
+    display: block;
     list-style-position: inside;
     font: 14px 'Oswald', sans-serif;
     padding: 10px;
@@ -226,6 +263,7 @@ a.add-new {
     background: #7e7e7e;
     color: #fff;
     padding: 10px 10px;
+    margin-top: 10px;
 }
 
 

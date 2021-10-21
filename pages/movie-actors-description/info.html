@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../img/favicon.png"/>
+    <title>Movie Actors Description</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="main-logo">
+            <img class="logo" src="../../img/favicon.png" alt="logo">
+            <span>Cinema</span>
+        </div>
+    </header>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a class="selected-page" href="../../pages/movie-actors-description/list.html">Movie Info</a></li>
+            <li><a href="../../pages/movie/list.html">Movies</a></li>
+            <li><a href="../../pages/actor/list.html">Actors</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 class="list-name">Create new movie actors description</h1>
+    <form class="form-input">
+        <div>
+            <label for="actor">Actor:</label>
+            <select name="actor_list_choose" id="actor" disabled>
+                <option class="errorChooseActor" value="">Choose an actor</option>
+                <option value="actor_1" selected>Christian Bale</option>
+                <option value="actor_2">Morgan Freeman</option>
+                <option value="actor_3">Samuel Leroy Jackson</option>
+                <option value="actor_4">John Joseph Travolta</option>
+            </select>
+        </div>
+        <div>
+            <label for="movie">Movie:</label>
+            <select name="movie_list_choose" id="movie" disabled>
+                <option class="errorChooseActor" value="">Choose a movie</option>
+                <option value="movie_1" selected>American Psycho</option>
+                <option value="movie_2">Pulp Fiction</option>
+                <option value="movie_3">Django Unchained</option>
+                <option value="movie_4"> Ford v Ferrari</option>
+            </select>
+        </div>
+        <div>
+            <label for="actor_fee">Actor Fee:</label>
+            <input id="actor_fee" type="text" value="$1 million" disabled>
+        </div>
+        <div>
+            <label for="actor_role_name">Actor Role Name:</label>
+            <input id="actor_role_name" type="text" value="Patrick Bateman" disabled>
+        </div>
+    </form>
+    <br>
+    <a class="add-new" href="../../pages/movie-actors-description/edit.html">Edit Movie Actors Description</a>
+    <table class="info">
+        <thead>
+        <tr>
+            <th>Movie Description</th>
+            <th>Role Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td> <span class="tbl-hist-movie-desc">A 2000 American black comedy horror film directed by Mary Harron. Written by Harron and Guinevere
+                    Turner, it is based on Bret Easton Ellis's 1991 novel American Psycho. Set in the 1980s, the film
+                    stars
+                    Christian Bale as Patrick Bateman, a yuppie New York City investment banker who is gradually
+                    revealed to
+                    be a serial killer preying on homeless/houseless people, sex workers, work colleagues, and finally
+                    random members of the public.</span></td>
+            <td>Patrick Bateman is a fictional character and the protagonist, as well as the narrator, of the novel
+                American
+                Psycho by Bret Easton Ellis, and its film adaptation. He is a wealthy, materialistic Wall Street
+                investment banker who leads a secret life as a serial killer. Bateman has also briefly appeared in
+                other
+                Ellis novels and their film and theatrical adaptations.</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<footer class="footer">
+    <span>Dmytro Proniakin s20737</span>
+</footer>
+<script src="../../js/pages/movie-history/script.js"></script>
+
+
+</body>
+</html>

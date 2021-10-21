@@ -28,13 +28,13 @@
     <form class="form-input" onsubmit="successfullyAdded()">
         <div>
             <label for="actor_name">Name</label>
-            <input id="actor_name" type="text" required>
-            <span class="errorName">(Field required)</span>
+            <span class="required">*</span>
+            <input id="actor_name" class="error_req_input_field" type="text" required>
         </div>
         <div>
             <label for="actor_suname">Surname</label>
-            <input id="actor_suname" type="text" required>
-            <span class="errorSurname">(Field required)</span>
+            <span class="errorSurname">*</span>
+            <input id="actor_suname" class="error_req_input_field" type="text" required>
 
         </div>
         <div>

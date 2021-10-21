@@ -26,6 +26,7 @@
     <form class="form-input" onsubmit="successfullyAdded()">
         <div>
             <label for="actor">Actor</label>
+            <span class="required">*</span>
             <select name="actor_list_choose" id="actor" required>
                 <option class="errorChooseActor" value="">Choose an actor</option>
                 <option value="actor_1">Christian Bale</option>
@@ -36,8 +37,9 @@
         </div>
         <div>
             <label for="movie">Movie</label>
+            <span class="required">*</span>
             <select name="movie_list_choose" id="movie" required>
-                <option class="errorChooseActor" value="">Choose a movie</option>
+                <option class="errorChooseActor" value="">Choose an actor</option>
                 <option value="movie_1">American Psycho</option>
                 <option value="movie_2">Pulp Fiction</option>
                 <option value="movie_3">Django Unchained</option>
@@ -46,20 +48,19 @@
         </div>
         <div>
             <label for="actor_fee">Actor Fee</label>
-            <input id="actor_fee" type="text" required>
-            <span class="errorActorFee">(Field required)</span>
+            <span class="required">*</span>
+            <input id="actor_fee" class="error_req_input_field" type="text" required>
 
         </div>
         <div>
             <label for="actor_role_name">Actor Role Name</label>
-            <input id="actor_role_name" type="text" required>
-            <span class="errorRoleName">(Field required)</span>
+            <span class="required">*</span>
+            <input id="actor_role_name" class="error_req_input_field"  type="text" required>
 
         </div>
         <div>
             <label for="actor_role_desc">Actor Role Description:</label><br>
-            <span class="errorRoleName">(Field required)</span>
-            <textarea id="actor_role_desc" class="huge-input-text" required></textarea>
+            <textarea id="actor_role_desc" class="huge-input-text" ></textarea>
 
         </div>
         <div>

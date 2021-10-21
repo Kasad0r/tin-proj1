@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../img/favicon.png"/>
+    <title>Movie Actors Description</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="main-logo">
+            <img class="logo" src="../../img/favicon.png" alt="logo">
+            <span>Cinema</span>
+        </div>
+    </header>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a href="../movie-actors-description/list.html">Movie Info</a></li>
+            <li><a class="selected-page" href="../../pages/movie/list.html">Movies</a></li>
+            <li><a href="../../pages/actor/list.html">Actors</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 class="list-name">Movie Info</h1>
+    <form class="form-input">
+        <div>
+            <label for="movie_name">Name: </label>
+            <input id="movie_name" type="text" value="Squid Game" disabled>
+        </div>
+        <div>
+            <label for="release_date">Release Date: </label>
+            <input id="release_date" type="date" value="2021-01-01" disabled>
+
+        </div>
+        <div>
+            <label for="imdb_rate">iMDB Rate: </label>
+            <input id="imdb_rate" type="number" value="8.3" disabled>
+        </div>
+        <div>
+            <label for="budget">Budget: </label>
+            <input id="budget" type="text" value="$30,000,000" disabled>
+        </div>
+        <div>
+            <label for="movie_description">Movie Description: </label>
+            <textarea id="movie_description" class="huge-input-text" disabled
+                   >Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion- prize at stake."
+</textarea>
+        </div>
+        <div class="genre-input">
+            <label>Genre: </label>
+            <div class="multiselect">
+                <div class="selectBox" onclick="showCheckboxes()">
+                    <label>
+                        <select>
+                            <option>Show genres</option>
+                        </select>
+                    </label>
+                    <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes">
+                    <label for="genre_horror">
+                        <input type="checkbox" id="genre_horror" checked disabled/>Horror</label>
+                    <label for="genre_scifi">
+                        <input type="checkbox" id="genre_scifi" disabled/>Sci-Fi</label>
+                    <label for="genre_sports">
+                        <input type="checkbox" id="genre_sports" disabled/>Sports</label>
+                    <label for="genre_comedy">
+                        <input type="checkbox" id="genre_comedy" checked disabled/>Comedy</label>
+                    <label for="genre_crime">
+                        <input type="checkbox" id="genre_crime" disabled/>Crime</label>
+                    <label for="genre_Romance">
+                        <input type="checkbox" id="genre_Romance" disabled/>Romance</label>
+
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </form>
+    <a class="add-new" href="../../pages/movie/edit.html">Edit Movie</a>
+    <table class="info">
+        <thead>
+        <tr>
+            <th>Actor Name</th>
+            <th>Actor Surname</th>
+            <th>Fee</th>
+            <th>Role</th>
+            <th>Role Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><span class="tbl-actor-info">Christian</span></td>
+            <td><span class="tbl-hist-movie-name"> Bale </span></td>
+            <td><span class="tbl-hist-movie-release"> $1 million</span></td>
+            <td> Patrick Bateman</td>
+            <td> <span class="tbl-hist-movie-release">  Patrick Bateman is a fictional character and the protagonist, as well as the narrator, of the novel
+                American
+                Psycho by Bret Easton Ellis, and its film adaptation. He is a wealthy, materialistic Wall Street
+                investment banker who leads a secret life as a serial killer. Bateman has also briefly appeared in
+                other
+                Ellis novels and their film and theatrical adaptations.</span></td>
+        </tr>
+        <tr>
+            <td><span class="tbl-actor-info">Christian</span></td>
+            <td><span class="tbl-hist-movie-name"> Bale </span></td>
+            <td><span class="tbl-hist-movie-release"> $1 million</span></td>
+            <td> Patrick Bateman</td>
+            <td> <span class="tbl-hist-movie-release">  Patrick Bateman is a fictional character and the protagonist, as well as the narrator, of the novel
+                American
+                Psycho by Bret Easton Ellis, and its film adaptation. He is a wealthy, materialistic Wall Street
+                investment banker who leads a secret life as a serial killer. Bateman has also briefly appeared in
+                other
+                Ellis novels and their film and theatrical adaptations.</span></td>
+        </tr>
+        <tr>
+            <td><span class="tbl-actor-info">Christian</span></td>
+            <td><span class="tbl-hist-movie-name"> Bale </span></td>
+            <td><span class="tbl-hist-movie-release"> $1 million</span></td>
+            <td> Patrick Bateman</td>
+            <td> <span class="tbl-hist-movie-release">  Patrick Bateman is a fictional character and the protagonist, as well as the narrator, of the novel
+                American
+                Psycho by Bret Easton Ellis, and its film adaptation. He is a wealthy, materialistic Wall Street
+                investment banker who leads a secret life as a serial killer. Bateman has also briefly appeared in
+                other
+                Ellis novels and their film and theatrical adaptations.</span></td>
+        </tr>
+        <tr>
+            <td><span class="tbl-actor-info">Christian</span></td>
+            <td><span class="tbl-hist-movie-name"> Bale </span></td>
+            <td><span class="tbl-hist-movie-release"> $1 million</span></td>
+            <td> Patrick Bateman</td>
+            <td> <span class="tbl-hist-movie-release">  Patrick Bateman is a fictional character and the protagonist, as well as the narrator, of the novel
+                American
+                Psycho by Bret Easton Ellis, and its film adaptation. He is a wealthy, materialistic Wall Street
+                investment banker who leads a secret life as a serial killer. Bateman has also briefly appeared in
+                other
+                Ellis novels and their film and theatrical adaptations.</span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<footer class="footer">
+    <span>Dmytro Proniakin s20737</span>
+</footer>
+
+<script src="../../js/pages/movie/script.js"></script>
+
+</body>
+</html>
