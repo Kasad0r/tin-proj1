@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/png" href="../../img/favicon.png"/>
     <title>Movie Actors Description</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
+
 <div id="wrapper">
     <header>
-        <div class="main-logo">
-            <img class="logo" src="../../img/favicon.png" alt="logo">
-            <span>Cinema</span>
-        </div>
+        <span class="logo-text">Cinema</span>
+        <img class="logo" src="../../img/favicon.png" alt="logo">
     </header>
     <nav>
-        <ul class="top-menu">
+        <ul>
             <li><a href="../../index.html">Main page</a></li>
             <li><a href="../movie-actors-description/list.html">Movie Info</a></li>
             <li><a class="selected-page" href="../../pages/movie/list.html">Movies</a></li>
             <li><a href="../../pages/actor/list.html">Actors</a></li>
         </ul>
     </nav>
-
-
     <h1 class="list-name">Movie Info</h1>
     <form class="form-input">
-        <div>
-            <label for="movie_name">Name: </label>
+        <div class="form-input-field">
+            <label for="movie_name">Name </label>
             <input id="movie_name" type="text" value="Squid Game" disabled>
         </div>
-        <div>
-            <label for="release_date">Release Date: </label>
+        <div class="form-input-field">
+            <label for="release_date">Release Date</label>
             <input id="release_date" type="date" value="2021-01-01" disabled>
 
         </div>
-        <div>
-            <label for="imdb_rate">iMDB Rate: </label>
+        <div class="form-input-field">
+            <label for="imdb_rate">iMDB Rate</label>
             <input id="imdb_rate" type="number" value="8.3" disabled>
         </div>
-        <div>
+        <div class="form-input-field">
             <label for="budget">Budget: </label>
             <input id="budget" type="text" value="$30,000,000" disabled>
         </div>
-        <div>
-            <label for="movie_description">Movie Description: </label>
+        <div class="form-input-field">
+            <label for="movie_description">Movie Description</label>
             <textarea id="movie_description" class="huge-input-text" disabled
-                   >Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion- prize at stake."
+            >Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion- prize at stake."
 </textarea>
         </div>
-        <div class="genre-input">
-            <label>Genre: </label>
-            <div class="multiselect">
+        <div class="genre-input form-input-field">
+            <label>Genre </label>
+            <div class="multiselect ">
                 <div class="selectBox" onclick="showCheckboxes()">
                     <label>
                         <select>
@@ -80,7 +78,7 @@
         <br>
 
     </form>
-    <a class="add-new" href="../../pages/movie/edit.html">Edit Movie</a>
+    <a class="add-new edit-button" href="../../pages/movie/edit.html">Edit Movie</a>
     <table class="info">
         <thead>
         <tr>

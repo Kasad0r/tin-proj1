@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="../../img/favicon.png"/>
+  <title>Movie Actors Description</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <span class="logo-text">Cinema</span>
+    <img class="logo" src="../../img/favicon.png" alt="logo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Main page</a></li>
+      <li><a href="../movie-actors-description/list.html">Movie Info</a></li>
+      <li><a href="../../pages/movie/list.html">Movies</a></li>
+      <li><a class="selected-page" href="../../pages/actor/list.html">Actors</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="list-name">Edit Actor</h1>
+  <form class="form-input" onsubmit="successfullyAdded()">
+    <div>
+      <label for="actor_name">Name</label>
+      <span class="required">*</span>
+      <input id="actor_name" type="text" placeholder="Write here  name" required>
+    </div>
+    <div>
+      <label for="actor_suname">Surname</label>
+      <span class="required">*</span>
+      <input id="actor_suname" placeholder="Write here surname" type="text" required>
+    </div>
+    <div>
+      <label for="actor_bday">B-day</label>
+      <input id="actor_bday" type="date">
+
+    </div>
+    <div>
+      <input type="submit">
+      <a class="back-btn" href="list.html">Back</a>
+    </div>
+  </form>
+</div>
+<br>
+<footer class="footer">
+  <span>Dmytro Proniakin s20737</span>
+</footer>
+
+<script src="../../js/pages/actor/script.js"></script>
+</body>
+</html>

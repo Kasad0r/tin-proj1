@@ -1,23 +1,117 @@
+@media all and (max-width: 720px) {
+    header {
+        flex-direction: column;
+    }
+
+    .genre-input {
+        display: inline-block;
+    }
+
+    .list-name {
+        text-align: center;
+    }
+
+    header span {
+        text-align: center;
+    }
+
+    header img.logo {
+        align-self: center;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        float: left;
+        text-align: center;
+    }
+
+    nav {
+        margin: auto;
+    }
+
+    .form-input-field {
+        text-align: center;
+    }
+
+    .form-input-field > input {
+        max-width: 100%;
+    }
+
+    .form-input {
+        align-content: center;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    .col_remove {
+        display: none;
+    }
+
+    .multiselect {
+
+    }
+
+    a.add-new {
+        width: 75%;
+        margin: 5% 10%;
+    }
+
+    a.edit-button {
+        width: 75%;
+    }
+
+    .list-name {
+        margin: 5%;
+    }
+
+    .form {
+        gap: 1rem;
+        row-gap: unset;
+        margin-left: unset;
+        display: grid;
+        grid-template-columns: 150px 300px 1fr;
+    }
+
+    .form-buttons {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media all and (max-width: 400px) {
+    body, nav, nav ul, header, main, footer {
+        margin: 0;
+    }
+
+    nav ul li {
+        flex-basis: 100%;
+    }
+}
+
 img.logo {
     max-width: 50px;
     max-height: 50px;
+    float: right;
 }
-
 
 body {
     color: #8f8f8f;
     font: 12px Tahoma, sans-serif;
     background-color: #f8f8f8;
-    border-top: 5px solid #7e7e7e;
     margin: 0;
 }
 
 .list-name {
-    font: 25px 'Oswald', sans-serif;
+    font: 25px Oswald, sans-serif;
     text-decoration: none;
     color: #8f8f8f;
     text-transform: uppercase;
-
 }
 
 .back-btn {
@@ -27,52 +121,34 @@ body {
     margin-top: 10px;
 }
 
+input:placeholder-shown {
+    border: 1px solid red;
+}
 
-input[type="text"] {
+input {
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
     height: 30px;
     color: #7e7e7e;
     padding: 0 10px;
     vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-input[type="number"] {
-    background-color: #f3f3f3;
-    border: 1px solid #e7e7e7;
-    height: 30px;
-    color: #7e7e7e;
-    padding: 0 10px;
-    vertical-align: top;
-}
 
-input[type="date"] {
-    background-color: #f3f3f3;
-    border: 1px solid #e7e7e7;
-    height: 30px;
-    color: #7e7e7e;
-    padding: 0 10px;
-    vertical-align: top;
-}
-
-input#actor_fee.error_req_input_field {
+/*input#actor_fee.error_req_input_field:placeholder-shown  {
     border: 2px solid red;
 }
 
-input#actor_role_name.error_req_input_field {
+input#actor_role_name.error_req_input_field:placeholder-shown  {
     border: 2px solid red;
-
 }
 
-input#actor_name.error_req_input_field {
+input#actor_name.error_req_input_field:placeholder-shown  {
     border: 2px solid red;
+}*/
 
-}
-
-input#actor_suname.error_req_input_field {
-    border: 2px solid red;
-
-}
 
 select {
     background-color: #f3f3f3;
@@ -84,7 +160,7 @@ select {
 }
 
 textarea.huge-input-text {
-    width: 100%;
+    width: 97.8%;
     height: 100px;
     resize: none;
     background-color: #f3f3f3;
@@ -107,8 +183,7 @@ input[type="submit"] {
     max-width: 960px;
     align-content: center;
     margin: auto;
-
-
+    display: grid;
 }
 
 table thead tr th {
@@ -118,36 +193,41 @@ table thead tr th {
 table {
     border-collapse: separate;
     border-spacing: 50px 0;
-    /* border-spacing: 0.5rem;*/
     border-radius: 3px;
     flex-basis: 10%;
 }
 
-.multiselect {
-    width: 200px;
-}
-
-.selectBox {
+.selectbox {
     position: relative;
 }
 
-.selectBox select {
-    width: 100%;
-    font-weight: bold;
+.selectbox select {
+    font-weight: 700;
 }
 
-.overSelect {
+.overselect {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+    box-sizing: border-box;
 }
 
 #checkboxes {
+    width: 15%;
     display: none;
     border: 1px #dadada solid;
+}
 
+#checkboxes label {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input:placeholder-shown {
+    border: 1px solid red;
 }
 
 #checkboxes label {
@@ -156,17 +236,14 @@ table {
 
 #checkboxes label:hover {
     background-color: #7e7e7e;
-    color: white;
-}
-
-nav .top-menu li a {
-    text-decoration: none;
-    color: #7e7e7e;
+    color: #fff;
 }
 
 .genre-input {
     display: inline-block;
+    width: 100%;
 }
+
 
 .tbl-name-col-val {
     font-size: 24px;
@@ -199,10 +276,6 @@ nav .top-menu li a {
     border-spacing: 2em;
 }
 
-.info tbody tr {
-
-}
-
 .tbl-hist-movie-release {
     color: #8f8f8f;
 }
@@ -212,10 +285,9 @@ nav .top-menu li a {
     font-size: 18px;
 }
 
-nav .top-menu li a:hover {
-    color: white;
+nav ul li a:hover {
+    color: #fff;
     background-color: #8f8f8f;
-
 }
 
 .form-input label {
@@ -231,24 +303,42 @@ nav .top-menu li a:hover {
 nav ul {
     margin: 0;
     padding: 0;
-
 }
 
 nav li a {
     display: block;
     list-style-position: inside;
-    font: 14px 'Oswald', sans-serif;
+    font: 14px Oswald, sans-serif;
     padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+.main-logo > span {
+    float: left;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 table thead tr th {
     font: 20px 'Noto Sans Mono', sans-serif;
 }
 
-header .main-logo {
-    display: inline-block;
-    font: 20px 'Noto Sans Mono', sans-serif;
+header .logo-text {
+    font: 45px 'Noto Sans Mono', sans-serif;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
 table {
@@ -256,27 +346,26 @@ table {
     padding: 25px;
 }
 
-
 a.add-new {
-    font: 16px 'Oswald', sans-serif;
+    font: 16px Oswald, sans-serif;
     text-decoration: none;
     background: #7e7e7e;
     color: #fff;
-    padding: 10px 10px;
+    padding: 10px;
     margin-top: 10px;
+    text-align: center;
 }
 
-
-.top-menu li {
+nav ul li {
     display: inline-block;
 }
 
-.top-menu li a {
+nav ul li a {
     padding: 10px 30px;
     margin: 0;
 }
 
-.top-menu li a.selected-page {
+nav ul li a.selected-page {
     background: #7e7e7e;
     color: #fff;
 }
@@ -289,7 +378,6 @@ a.add-new {
     align-content: center;
 }
 
-
 footer {
     position: fixed;
     left: 0;
@@ -297,7 +385,7 @@ footer {
     width: 100%;
     font-size: 14px;
     background-color: #7e7e7e;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
@@ -311,20 +399,22 @@ ul.actions-list {
     padding: 0;
 }
 
-
 ul.actions-list li {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
     text-align: center;
     padding: 10px;
 }
 
 ul.actions-list li a {
     text-decoration: none;
-    color: #7e7e7e;;
-    font: 14px 'Oswald', sans-serif;
-
+    color: #7e7e7e;
+    font: 14px Oswald, sans-serif;
 }
 
 form.form-input {
     padding: 10px;
+}
+
+.actor-movie-select {
+    display: inline-block;
 }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/png" href="../../img/favicon.png"/>
     <title>Movie Actors Description</title>
     <link rel="stylesheet" href="../../css/style.css">
@@ -9,13 +10,11 @@
 <body>
 <div id="wrapper">
     <header>
-        <div class="main-logo">
-            <img class="logo" src="../../img/favicon.png" alt="logo">
-            <span>Cinema</span>
-        </div>
+        <span class="logo-text">Cinema</span>
+        <img class="logo" src="../../img/favicon.png" alt="logo">
     </header>
     <nav>
-        <ul class="top-menu">
+        <ul>
             <li><a href="../../index.html">Main page</a></li>
             <li><a href="../movie-actors-description/list.html">Movie Info</a></li>
             <li><a class="selected-page" href="../../pages/movie/list.html">Movies</a></li>
@@ -23,28 +22,25 @@
         </ul>
     </nav>
 
-
     <h1 class="list-name">Movies List</h1>
 
     <table>
         <thead>
         <tr>
             <th>Name</th>
-            <th>Release Data</th>
-            <th>iMDB rate</th>
-            <th>Budget</th>
-           <!-- <th>Description</th>-->
+            <th class="col_remove">Release Data</th>
+            <th class="col_remove">iMDB rate</th>
+            <th class="col_remove">Budget</th>
             <th>Genre</th>
             <th>Action</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td class="tbl-movie-name">     Free Guy</td>
-            <td class="tbl-movie-release">  2021</td>
-            <td class="tbl-hist-movie-name">7.3</td>
-            <td>$120,000,000</td>
-           <!-- <td>A bank teller discovers that he's actually an NPC inside a brutal, open world video game.</td>-->
+            <td class="tbl-movie-name"> Free Guy</td>
+            <td class="tbl-movie-release col_remove"> 2021</td>
+            <td class="tbl-hist-movie-name col_remove">7.3</td>
+            <td class="col_remove">$120,000,000</td>
             <td class="tbl-movie-genre">Action, Adventure, Comedy</td>
             <td>
                 <ul class="actions-list">
@@ -62,14 +58,10 @@
             </td>
         </tr>
         <tr>
-            <td class="tbl-movie-name">     Squid Game</td>
-            <td class="tbl-movie-release">  2021</td>
-            <td class="tbl-hist-movie-name">8.3</td>
-            <td>$30,000,000</td>
-           <!-- <td>Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside,
-                a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won
-                prize at stake.
-            </td>-->
+            <td class="tbl-movie-name"> Squid Game</td>
+            <td class="tbl-movie-release col_remove"> 2021</td>
+            <td class="tbl-hist-movie-name col_remove">8.3</td>
+            <td class="col_remove">$30,000,000</td>
             <td class="tbl-movie-genre">Action, Adventure, Drama</td>
             <td>
                 <ul class="actions-list">

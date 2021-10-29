@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/png" href="../../img/favicon.png"/>
     <title>Movie Actors Description</title>
     <link rel="stylesheet" href="../../css/style.css">
@@ -9,13 +10,11 @@
 <body>
 <div id="wrapper">
     <header>
-        <div class="main-logo">
-            <img class="logo" src="../../img/favicon.png" alt="logo">
-            <span>Cinema</span>
-        </div>
+        <span class="logo-text">Cinema</span>
+        <img class="logo" src="../../img/favicon.png" alt="logo">
     </header>
     <nav>
-        <ul class="top-menu">
+        <ul>
             <li><a href="../../index.html">Main page</a></li>
             <li><a href="../movie-actors-description/list.html">Movie Info</a></li>
             <li><a href="../../pages/movie/list.html">Movies</a></li>
@@ -23,26 +22,25 @@
         </ul>
     </nav>
 
-
     <h1 class="list-name">Actor Info</h1>
     <form class="form-input" onsubmit="successfullyModified()">
-        <div>
-            <label for="actor_name">Name: </label>
+        <div class="form-input-field">
+            <label for="actor_name">Name </label>
             <input id="actor_name" type="text" value="Charlie" disabled>
         </div>
-        <div>
-            <label for="actor_suname">Surname: </label>
+        <div class="form-input-field">
+            <label for="actor_suname">Surname</label>
             <input id="actor_suname" type="text" value="Sheen" disabled>
 
         </div>
-        <div>
-            <label for="actor_bday">B-day: </label>
+        <div class="form-input-field">
+            <label for="actor_bday">B-day</label>
             <input id="actor_bday" type="date" value="1965-09-06" disabled>
 
         </div>
         <br>
-        <a class="add-new" href="../../pages/actor/edit.html">Edit Actor</a>
     </form>
+    <a class="add-new edit-button" href="../../pages/actor/edit.html">Edit Actor</a>
     <table class="info">
         <thead>
         <tr>
@@ -54,8 +52,8 @@
         </thead>
         <tbody>
         <tr>
-            <td> <span class="tbl-hist-movie-name">American Psycho</span></td>
-            <td> <span class="tbl-hist-movie-release">  January 21, 2000</span></td>
+            <td><span class="tbl-hist-movie-name">American Psycho</span></td>
+            <td><span class="tbl-hist-movie-release">  January 21, 2000</span></td>
             <td> Patrick Bateman</td>
             <td> <span class="tbl-hist-movie-release">  Patrick Bateman is a fictional character and the protagonist, as well as the narrator, of the novel
                 American
